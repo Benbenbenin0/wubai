@@ -41,3 +41,4 @@ for epoch in range(5):
         optimizer.step()
 
     print(f"Epoch {epoch + 1} completed, loss: {loss.item()}")
+

@@ -43,3 +43,4 @@ print(f"Overall Evaluation Score: {overall_score}")
 
 muspy.plot_pianoroll(generated_track.tracks[0], show=True, title="Generated Track")
 muspy.plot_pianoroll(input_melody.tracks[0], show=True, title="Input Melody")
+

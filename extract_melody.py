@@ -27,3 +27,4 @@ def extract_melody(input_audio_path, output_audio_path, tuning=True):
 input_audio = ""
 output_audio = ""
 extract_melody(input_audio, output_audio, tuning=True)
+
