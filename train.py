@@ -36,7 +36,8 @@ for epoch in range(10):  # Number of epochs
 
         optimizer.zero_grad()
 
-        generated_audio = model.generate(**inputs, max_new_tokens=1024)
+        #generated_audio = model.generate(**inputs, max_new_tokens=1024)
+        generated_audio = model(**inputs)
         output_path = os.path.join("generatedTracks", f"generated_epoch{epoch}_batch{batch_idx}.wav")
         generated_audio_waveform = generated_audio.squeeze(0).cpu()
         torchaudio.save(output_path, generated_audio_waveform.unsqueeze(0), 44100)
